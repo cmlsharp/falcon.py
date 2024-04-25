@@ -2,19 +2,19 @@
 Python implementation of Falcon:
 https://falcon-sign.info/.
 """
-from common import q
 from numpy import set_printoptions
 from math import sqrt
-from fft import fft, ifft, sub, neg, add_fft, mul_fft
-from ntt import sub_zq, mul_zq, div_zq
-from ffsampling import gram, ffldl_fft, ffsampling_fft
-from ntrugen import ntru_gen
-from encoding import compress, decompress
+from .common import q
+from .fft import fft, ifft, sub, neg, add_fft, mul_fft
+from .ntt import sub_zq, mul_zq, div_zq
+from .ffsampling import gram, ffldl_fft, ffsampling_fft
+from .ntrugen import ntru_gen
+from .encoding import compress, decompress
 # https://pycryptodome.readthedocs.io/en/latest/src/hash/shake256.html
 from Crypto.Hash import SHAKE256
 # Randomness
 from os import urandom
-from rng import ChaCha20
+from .rng import ChaCha20
 # For debugging purposes
 import sys
 if sys.version_info >= (3, 4):

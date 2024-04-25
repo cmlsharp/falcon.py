@@ -1,11 +1,11 @@
 """
 This file implements the section 3.8.2 of Falcon's documentation.
 """
-from fft import fft, ifft, add_fft, mul_fft, adj_fft, div_fft
-from fft import add, mul, div, adj
-from ntt import ntt
-from common import sqnorm
-from samplerz import samplerz
+from .fft import fft, ifft, add_fft, mul_fft, adj_fft, div_fft
+from .fft import add, mul, div, adj
+from .ntt import ntt
+from .common import sqnorm
+from .samplerz import samplerz
 
 
 q = 12 * 1024 + 1

@@ -2,7 +2,7 @@
 Profile the code with:
 > make profile
 """
-from test import *
+from .test import *
 
 if __name__ == "__main__":
     test_signature(1024, 100)
